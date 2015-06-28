@@ -1,6 +1,6 @@
 <?php include("include/function.php");?>
 <!doctype html>
-<html lang="en">
+<html lang="cn">
 <head>
     <meta charset="UTF-8">
     <title><?php get_title();?></title>
@@ -10,8 +10,11 @@
     <link type="text/css" rel="stylesheet" href="style/foot.css"/>
     <link type="text/css" rel="stylesheet" href="http://js.mplant.pw/lib/easyui/themes/icon.css"/>
     <link type="text/css" rel="stylesheet" href="http://js.mplant.pw/lib/easyui/themes/metro/easyui.css"/>
+    <link href="http://js.mplant.pw/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://js.mplant.pw/lib/bootstrap-3.3.5-dist/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://js.mplant.pw/lib/easyui/jquery.min.js"></script>
     <script src="http://js.mplant.pw/lib/easyui/jquery.easyui.min.js"></script>
+    <script src="http://js.mplant.pw/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
         extensions: ["tex2jax.js"],

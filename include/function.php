@@ -16,29 +16,19 @@ function get_file(){
 
 function get_title(){
     $file = get_file();
-    if($file=='index.php'){
-        echo '实验室主页';
-    }
-    if($file=='instrument.php'){
-        echo '仪器培训';
-    }
-    if($file=="video.php"){
-        echo '视频观看';
-    }
+    $title = Array(
+        'index.php'=>'实验室主页',
+        'instrument.php'=>'仪器培训',
+        'video.php'=>'视频观看',
+        'clipboard.php'=>'剪切板',
+    );
+    echo $title[$file];
 }
 
 
 function get_import(){
     $file = get_file();
-    if($file=='index.php'){
-        echo "style/index.css";
-    }
-    if($file=='instrument.php'){
-        echo "style/instrument.css";
-    }
-    if($file=='video.php'){
-        echo 'style/video.css';
-    }
+    echo 'style/'.substr($file,0,-4).'.css';
 }
 
 
