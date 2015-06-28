@@ -1,0 +1,13 @@
+.relate-video{
+    width:150px;
+    height: 100px;
+}
+
+.relate-video:hover{
+    border:5px solid red;
+}
+
+.easyui-layout{
+    box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.6);
+}
+

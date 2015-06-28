@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<videos>
+    <video id="1" cat="abs">
+        <filename>54c1983c-a1bd-44e0-8b53-c308b5b503d8</filename>
+        <description>
+            <![CDATA[紫外可见吸收光谱仪进行日常维护]]>
+        </description>
+    </video>
+    <video id="2" cat="abs">
+        <filename>1e0d481a-5b53-4ebb-b719-0eff30d501f0</filename>
+        <description><![CDATA[
+    紫外可见吸收光谱仪器操作案例（一）
+    ]]></description>
+    </video>
+    <video id="3" cat="abs">
+        <filename>2a675af3-31df-4b53-9f79-7f8f20e0c17a</filename>
+        <description><![CDATA[
+    紫外可见光谱仪的原理
+    ]]></description>
+    </video>
+</videos>
