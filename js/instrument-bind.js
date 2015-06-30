@@ -13,10 +13,28 @@ $(function(){
             $(tmplink).show();
         });
     });
+
+    hidebody();
+    $('.collapse').first().collapse('show');
+    $('.panel-heading').each(function(){
+        $(this).click(function(){
+            hidebody();
+            $(this).next().collapse('show');
+        });
+    });
+
+
 });
 
 function hideall(){
     $('.instrument-body').each(function(){
         $(this).hide();
+    });
+
+}
+
+function hidebody(){
+    $('.collapse').each(function(){
+        $(this).collapse('hide');
     });
 }

@@ -21,6 +21,7 @@ function get_title(){
         'instrument.php'=>'仪器培训',
         'video.php'=>'视频观看',
         'clipboard.php'=>'剪切板',
+        'search.php'=>'搜索',
     );
     echo $title[$file];
 }
@@ -89,6 +90,27 @@ function get_video_image($id, $flag){
     //根据id,flag获得视频的大截图或者小截图
     $videoinfo = get_video_info($id);
     echo $videoinfo[$flag];
+}
+
+function get_relate_video($wd){
+    $xml=simplexml_load_file('video/video.xml');
+    $videos = $xml->xpath('video[contains(description,"'.$wd.'")]');
+    $ret = array();
+    for($i=0;$i<count($videos);$i++){
+        $tmpfn = (string)($videos[$i]->filename);
+        $ids = $videos[$i]->xpath('./@id');
+        $id = (string)$ids[0];
+        $cats =$videos[$i]->xpath('./@cat');
+        $cat = (string)$cats[0];
+        $title = (string)($videos[$i]->description);
+        $ret[$i] = array(
+            'filename'=>$tmpfn,
+            'id'=>$id,
+            'cat'=>$cat,
+            'title'=>$title,
+        );
+    }
+    return $ret;
 }
 
 

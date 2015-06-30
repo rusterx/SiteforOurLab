@@ -1,7 +1,8 @@
 .main-instrument{
     width:1000px;
     margin:20px auto;
-    min-height: 500px;    box-sizing: border-box;
+    min-height: 500px;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
@@ -9,19 +10,13 @@
 .instrument-nav{
     width:250px;
     float:left;
-    border:1px solid #dddddd;
-    color:darkcyan;
     font-size:14px;
-    box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.6);
 }
 
 
 .instrument-body{
-    width:734px;
+    width:740px;
     float:right;
-    border:1px solid #dddddd;
-    background-color: white;
-    box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.6);
 }
 
 ul{
@@ -35,6 +30,7 @@ ul{
     -webkit-border-radius: 100px / 50px;
     border-radius: 100px / 50px;
 }
+
 .video-col{
     margin-bottom: 10px;
 }
@@ -43,18 +39,4 @@ ul{
     line-height: 150%;
 }
 
-.instrument-nav-menu{
-    list-style-type: square;
-}
 
-.instrument-nav-menu>li{
-    cursor: pointer;
-}
-
-.panel>.panel-title{
-    width:734px;
-}
-
-.panel>.panel-body{
-    width:734px;
-}

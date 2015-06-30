@@ -9,7 +9,7 @@
     });
 
 </script>
-    <div class="sel-wrap">
+    <div class="sel-wrap form-group">
         <label for="name">请输入剪切板内容(自动保存)</label>
         <textarea class="sel-content form-control" rows="6"></textarea>
     </div>

@@ -3,11 +3,33 @@
     height: 100px;
 }
 
+.relate-video:not(first){
+    margin-top:10px;
+}
+
 .relate-video:hover{
     border:5px solid red;
 }
 
-.easyui-layout{
-    box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.6);
+.video-center{
+    width:1000px;
+    height:620px;
+    margin:20px auto;
 }
 
+#videoRight{
+    width:180px;
+    height:600px;
+    float:right;
+}
+
+#videoCenter{
+    width:800px;
+    height:600px;
+    float:left;
+}
+
+#videoCenter>.panel-body{
+    height:560px;
+    width:100%;
+}
